@@ -1,0 +1,1 @@
+G:\Development\Visual Studio\Projetos\PoCs\PagarMe.Net.PoCs\obj\Debug\PagarMe.Net.PoCs.csprojResolveAssemblyReference.cache

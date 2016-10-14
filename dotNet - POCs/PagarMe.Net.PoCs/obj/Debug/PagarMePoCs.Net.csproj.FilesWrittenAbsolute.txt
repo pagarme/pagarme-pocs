@@ -1,0 +1,9 @@
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/bin/Debug/PagarMePoCs.Net.exe.config
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/bin/Debug/PagarMePoCs.Net.exe.mdb
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/bin/Debug/PagarMePoCs.Net.exe
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/obj/Debug/PagarMePoCs.Net.exe
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/obj/Debug/PagarMePoCs.Net.exe.mdb
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/bin/Debug/BouncyCastle.Crypto.dll
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/bin/Debug/PagarMe.dll
+/media/aledsz/Files/csharp/PagarMeNet-PoCs/PagarMe.Net.PoCs/bin/Debug/Newtonsoft.Json.dll
