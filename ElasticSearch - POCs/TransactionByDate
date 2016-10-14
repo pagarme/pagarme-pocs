@@ -1,0 +1,19 @@
+{
+  "query": {
+    "filtered": {
+      "query": {"match_all": {}},
+      "filter": {
+        "and": [
+          {
+            "range": {
+              "date_created": {
+                "lt": "DIA DE HOJE",
+                "gt": "DIA DE ANTES DE ONTEM"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
