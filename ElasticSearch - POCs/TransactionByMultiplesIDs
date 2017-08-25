@@ -1,0 +1,12 @@
+curl -X GET https://api.pagar.me/1/search
+     -d 'api_key=SUA_API_KEY' \
+     -d 'type=transaction' \
+     -d 'query={
+      "query": {
+        "terms" : {
+          "id": [
+            "ID_TRX_1","ID_TRX_2","ID_TRX_3","ID_TRX_N"
+          ]
+        }
+      }
+     }'

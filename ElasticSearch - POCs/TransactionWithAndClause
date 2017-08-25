@@ -1,0 +1,17 @@
+curl -X GET https://api.pagar.me/1/search
+  -d 'api_key=SUA API KEY' \
+  -d 'type=transaction' \
+  -d 'query={
+    "query": {
+      "bool" : {
+        "must":[
+          {"match_phrase":{
+            "metadata.publisherId": "7894141"
+          }},
+          {"match_phrase":{
+            "metadata.viewerEmail": "3@3.com"
+          }}
+        ]
+      }
+    }
+  }'

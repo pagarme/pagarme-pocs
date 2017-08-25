@@ -1,0 +1,12 @@
+curl -X GET https://api.pagar.me/1/search
+     -d 'api_key=SUA_API_KEY' \
+     -d 'type=balance' \
+     -d 'query={
+      "query": {
+        "terms" : {
+          "available.amount": [
+            "VALOR DO AMOUNT"
+          ]
+        }
+      }
+     }'
