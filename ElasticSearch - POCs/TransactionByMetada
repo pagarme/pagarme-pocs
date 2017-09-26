@@ -1,0 +1,12 @@
+ curl -X GET https://api.pagar.me/1/search
+     -d 'api_key=SUA_API_KEY' \
+     -d 'type=transaction' \
+     -d 'query={
+      "query": {
+        "terms" : {
+          "metadata.id": [
+            "CONTEUDO_METADATA"
+          ]
+        }
+      }
+     }'
