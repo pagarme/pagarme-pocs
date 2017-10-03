@@ -36,7 +36,7 @@ public class TransactionCommand {
     }
 
     public void run() {
-        PagarMe.init("ak_test_PtuVPnBt7qxHN0b6ezePmfeWNqqIEd");
+        PagarMe.init("SUA_CHAVE_DE_API");
         if (request.getParameter("token") != null) {
 
             try {
