@@ -1,0 +1,25 @@
+{
+  "name": "pocjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Jonatas Maximiano",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "pagarme": "^3.7.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}

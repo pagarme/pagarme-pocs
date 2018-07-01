@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Shopping Cart - Brand v01</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='http://img1.wsimg.com/ux/1.3.9-brand/css/uxcore.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <head>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+</head>
+<body class="ux-app">
+<div class="container">
+  <div class="cart">
+    <div class="basket col-md-6 col-md-offset-1">
+       <div class="product ux-card">
+        <img src="images/eshopcard.jpg" height="40" width="40" />
+        <span class="title"><a href="/product/{id}">Eshop Card </a></span>
+        <span class="price">
+          $21.99
+        </span>
+        <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button>
+      </div>
+      <div class="product ux-card">
+        <img src="images/coverKirby.jpg" height="32" width="32" />
+        <span class="title"><a href="/product/{id}">Kirby Star Alies</a></span>
+        <span class="price">$59.00</span>
+        <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button>
+      </div>
+      <div class="product ux-card">
+        <img src="images/ahri.png" height="32" width="32" />
+        <span class="title"><a href="/product/{id}">Action Figure Oficial Ahri - League of Legends</a></span>
+        <span class="price"><strike></strike>$60.00</span>
+        <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button>
+      </div>
+    </div>
+    <div class="summary col-md-4">
+      <dl class="subtotal">
+        <dt>Subtotal</dt>
+        <dd>$140.99</dd>
+        <dt><a href="/taxes">Frete </a></dt>
+        <dd>$3.42</dd>
+      </dl>
+      <dl class="total">
+        <dt>Total</dt>
+        <dd>$144.41</dd>
+      </dl>
+      <dl class="support">
+      </dl>
+      
+
+      <div class="complete">
+        <a href="checkoutForm.html"> <button type="button"  class="btn btn-purchase">Complete Purchase</button> </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
+
+  
+
+    <script  src="./index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+
+$break-tablet: 992px;
+
+body.ux-app {
+  @media screen and (min-width: $break-tablet) {
+    background: #fff;
+    padding:40px 0;
+  }
+}
+.basket, .container {
+  padding:0;
+  @media screen and (min-width: $break-tablet) {
+    padding:0 10px;
+  }
+}
+.action-link {
+  color: #008A32;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: #008A32;
+  }
+}
+.ux-card {
+  border: 1px solid #E8E8E8;
+  background: #FCFCFC;
+  padding:20px;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    border-color: #008a32;
+    background-color: #fff;
+  }
+  a {
+    @extend .action-link;
+  }
+}
+// Roll up the card so the stack smoothly slides up to take its place
+.ux-card.deleted {
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.2s;
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: none;
+  border: none;
+}
+
+a {
+  color: #333;
+  &:hover {
+    color: #000;
+  }
+}
+
+.product {
+  color: #767676;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: $break-tablet) {
+    padding-left: 75px;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+  }
+  img {
+    @media screen and (min-width: $break-tablet) {
+      display: block;
+    }
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .title{
+  }
+  .price {
+    color: #333;
+    font-weight: bold;
+  }
+  .tier {
+    padding-bottom: 1em;
+  }
+  .renews {
+    padding-top: 1em;
+  }
+  .title, .tier, .attr, .renews {
+    float: left;
+    clear: left;
+  }
+  .price, .term {
+    float: right;
+    clear: right;
+  }
+  .remove {
+    float: right;
+    clear: right;
+    display: none;
+    color: #008a32 !important;
+    border-width: 1px;
+    box-shadow: none !important;
+    font-size: 12px;
+    padding-bottom: 5px !important;
+    & .uxicon {
+      margin-top: 3px;
+      box-shadow: none !important;
+    }
+    &:hover {
+      border-color: #008a32 !important;
+    }
+    @media screen and (min-width: $break-tablet) {
+      display: block;
+    }
+  }
+}
+
+.product span { 
+  display: block;
+}
+
+.summary {
+  dl {
+    margin:0;
+    padding:20px;
+    dt {
+      float:left;
+      clear:left;
+      font-weight: normal;
+    }
+    dd {
+      float:right;
+      clear:right;
+      font-weight: bold;
+    }
+    &:after {
+      content: ".";
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+  .subtotal {
+    @media screen and (min-width: $break-tablet) {
+      border-top: 5px solid #D0D0D0;
+      dt {
+        margin-top: 2px;
+      }
+      dd {
+        font-size: 18px;
+      }
+    }
+  }
+  .total {
+    background: #128937;
+    color: #fff;
+    padding: 20px;
+    dt {
+      text-transform: uppercase;
+      margin-top:0.5em;
+      font-weight:bold;
+    }
+    dd {
+      font-size:1.5em;
+    }
+  }
+  .support {
+    dd {
+      float: left;
+      font-weight: normal;
+      padding-left: 0.5em;
+    }
+  }
+  button {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+.payment, .terms {
+  margin-bottom: 20px;
+  & > a {
+    float: right;
+    padding-right:20px;
+    text-transform: uppercase;
+    @extend .action-link;
+  }
+  h4, p {
+    padding: 0 20px;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+.terms .agreed {
+  display: none;
+}
+
+p.agreed {
+  padding-left: 50px;
+  position: relative;
+  &:before {
+    content: " ";
+    background-image: url(https://img1.wsimg.com/fos/react/check.svg);
+    position: absolute;
+    left: 20px;
+    top: 4px;
+    width: 20px;
+    height: 21px;
+  }
+}
+
+.cart button[disabled] {
+  background: #e8e8e8 !important;
+  border-bottom: none !important;
+  color: #848484 !important;
+  opacity: 1;
+}
+
+.price {
+  position: relative;
+  display: inline-block;
+  .old {
+    position: absolute;
+    right: 0;
+    opacity: 1;
+  }
+  .new {
+    opacity: 0;
+  }
+  .strike {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    border-top: 1px solid #333;
+  }
+}
+
+#controls {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}

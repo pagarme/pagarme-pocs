@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Phineas Flynn",
+		"email": "phineas@disney.com",
+		"phone": "5511982785986",
+		"birthday": "2001-01-20",
+		"street": "Fisherman",
+		"street_number": "42",
+		"complementary": "A",
+		"neighborhood": "Area dos três estados",
+		"city": "New York", 
+		"state": "SP",
+		"zipcode": "01222001",
+		"document_number": "51315518031"
+	}	
+]

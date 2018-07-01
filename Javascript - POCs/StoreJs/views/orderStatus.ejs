@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Status do Pedido </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <link rel="stylesheet" href="/stylePostOrder.css"/>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<nav id ='menu'>
+			<ul>
+				<li>  <a href="/"> Produtos </a>  </li>
+				<li>  <a href='/getSubscriptions'> Minhas assinaturas </a> </li>
+				<li>  <a href='/getTransactions'>  Minhas transações  </a> </li>
+			</ul>
+		</nav>
+		<p> <h3> Status do Pedido </h3> </p>
+		<div id ='divBoleto'>
+			<p> <b> Sua Transação foi criada com sucesso </b></p>
+			<p> <b> Nome do produto: </b>  <%- JSON.stringify(product.name) %>   </p>
+			<p> </b> Valor do produto </b> (em centavos): <%- JSON.stringify(product.price) %> </p> <br>
+			<form id ='boletoForm' target ='_blank'>
+				<input type = 'submit' value ='Imprimir Boleto' class ='btn'/>
+			</form>
+		</div>
+		<div id = 'divTransaction'>
+			<p>	<b> <%- JSON.stringify(msg) %>  </b> </p>  
+			<h4> <%- JSON.stringify(product.name) %> </h4>
+			<p> Valor do produto (em centavos): <%- JSON.stringify(product.price) %> </p>
+		</div>
+		<div id = 'divSubscription'>
+	
+			<h4> <%- JSON.stringify(product.name) %> </h4>
+			<p> Valor do produto (em centavos): <%- JSON.stringify(product.price) %> </p>
+			<p> ID do plano:  <%- JSON.stringify(product.plan_id) %> </p>
+		
+		</div>
+
+		<div id ='div_errors'>
+			<h4> Houve um erro na criação da sua transação </h4>
+			<p> <%- JSON.stringify(msg) %></p>
+		</div>
+	</body>
+	<script>
+	 	  console.log((<%- JSON.stringify(product) %>));
+		  console.log((<%- JSON.stringify(status) %>));
+		  if((<%- JSON.stringify(product.type) %>)=== 'product' && (<%- JSON.stringify(status) %>) === 'Ok'){
+		  	$('#divTransaction').show();
+		  	$('#divSubscription').hide();
+		  	$('#divBoleto').hide();
+		  	$('#div_errors').hide();
+		  } else if((<%- JSON.stringify(product.type) %>) === 'product' && (<%- JSON.stringify(status) %>) === 'boleto'){
+		  	$('#divTransaction').hide();
+		  	$('#divSubscription').hide();
+		  	$('#divBoleto').show();
+		  	$('#div_errors').hide();
+		  	$('#boletoForm').attr("action",<%- JSON.stringify(msg) %>);
+		  } else if ((<%- JSON.stringify(status) %>) === 'Not Ok'){
+		  	$('#divTransaction').hide();
+		  	$('#divSubscription').hide();
+		  	$('#divBoleto').hide();
+		  	$('#div_errors').show();
+		  } else if((<%- JSON.stringify(product.type) %>)=== 'subscription' && ((<%- JSON.stringify(status) %>) === 'Ok') || (<%- JSON.stringify(status) %>) === 'boleto') {
+		  	$('#divTransaction').hide();
+		  	$('#divSubscription').show();
+		  	$('#divBoleto').hide();
+		  	$('#div_errors').hide();
+		  }
+	</script>
+</html>
+
+

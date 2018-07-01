@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Minhas transações </title>
+		<meta charset = "UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="/styleTable.css"/>
+		<link rel="stylesheet" href="/stylePostOrder.css"/>
+
+
+	</head>
+	<body>
+		<nav id ='menu'>
+				<ul>
+					<li>  <a href="/"> Produtos </a>  </li>
+					<li>  <a href='/getSubscriptions'> Minhas assinaturas </a> </li>
+				</ul>
+		</nav>
+		<table class='transactionsTable'> 
+			<thead>
+				<th> ID Da Transação </th>
+				<th> Valor da transação (em centavos) </th>
+				<th> Nome do comprador </th>
+				<th> E-mail do comprador </th>
+			</thead>
+		</table>
+	</body>
+	<script>
+			var transactions = <%- JSON.stringify(transactions) %>
+			var table = $('.transactionsTable');
+			for(var i = 0;i < transactions.length;i++){
+				table.append("<tr><td>"+transactions[i].id+"</td>"+
+					"<td>"+transactions[i].amount+"</td>"+
+					"<td>"+transactions[i].customer.name+"</td>"+
+					"<td>"+transactions[i].customer.email+"</td></tr>"
+				)
+			}
+	</script>
+</html>

@@ -1,0 +1,24 @@
+<style>
+.transactionsTable {
+    font-family: "Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.transactionsTable td, .transactionsTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.transactionsTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.transactionsTable tr:hover {background-color: #ddd;}
+
+.transactionsTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
