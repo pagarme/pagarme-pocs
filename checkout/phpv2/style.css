@@ -1,0 +1,65 @@
+#transaction-button {
+  background-color: #FF5C08;
+}
+
+#transaction-button:hover {
+  background-color: #FF8E54;
+}
+
+button:hover {
+  border-color: black;
+}
+
+button:focus {
+  border-color: yellow;
+}
+
+#subscription-button {
+  background-color: #66A8FF;
+}
+
+#subscription-button:hover {
+  background-color: #B2D4FF;
+}
+
+.button {
+  box-shadow: 2px 2px 2px #ccc;
+  border-radius: 5px;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: bold;
+  width: 30ch;
+  margin: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.response {
+  z-index: 99999;
+  position: fixed;
+  top: 10%;
+  left:23%;
+  width: 50%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.success {
+  background-color: #B0E81F;
+}
+
+.fail {
+  background-color: red;
+}
+
