@@ -1,0 +1,3 @@
+[submodule "checkout/phpv2/pagarme-php"]
+	path = checkout/phpv2/pagarme-php
+	url = git@github.com:pagarme/pagarme-php.git
