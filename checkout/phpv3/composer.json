@@ -1,0 +1,12 @@
+{
+    "name": "murilo/phpv3",
+    "authors": [
+        {
+            "name": "Pagar.me Suporte",
+            "email": "suporte@pagar.me"
+        }
+    ],
+    "require": {
+        "pagarme/pagarme-php": "^3.7"
+    }
+}
