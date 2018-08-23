@@ -9,6 +9,7 @@ require("../pagarme-php/Pagarme.php");
  * por seu usuário através do front-end.
  */
 $amount = 8000;
+
 $token = $_POST['token']; //Token enviado pelo checkout pagar.me
 
 Pagarme::setApiKey("SUA_CHAVE_DE_API");
