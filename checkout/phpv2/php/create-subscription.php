@@ -31,10 +31,10 @@ try{
 
     /* Em caso de sucesso, retorna o ID da transação para a página do checkout */
     echo $subscription->id;
-    header('HTTP/1.0 200 Transação capturada com sucesso');
+    header('HTTP/1.0 200 Assinatura criada com sucesso');
 } catch (PagarMe_Exception $e) {
     /* Em caso de erro, retorna o erro para a página do checkout */
     echo $e->getMessage();
-    header('HTTP/1.0 400 Falha ao capturar a transação');
+    header('HTTP/1.0 400 Falha ao criar a assinatura');
 }
 

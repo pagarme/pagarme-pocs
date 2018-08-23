@@ -8,10 +8,12 @@
     // inicia a instância do checkout
     var checkout = new PagarMeCheckout.Checkout({
       encryption_key: 'SUA_ENCRYPTION_KEY',
+
       /* success tratará o retorno do Pagar.me, 
        * neste caso ela receberá o token da transação, 
        * que deve ser utilizado para capturar a transação posteriormente */
       success: function(checkoutData) {
+
         /* $.ajax envia os dados gerados pelo checkout 
          * para o script capture-transaction.php
          */
@@ -19,10 +21,12 @@
           method: 'POST',
           url: 'php/capture-transaction.php',
           data: checkoutData,
+
           /* Este success irá fazer o tratamento de sucesso do script "capture-transaction.php" */
           success: function (transactionId) {
             createResponseDiv('success', 'Transação criada com sucesso: ' + transactionId)
           },
+
           /* error irá tratar os erros que forem recebidos do script "capture-transaction.php" */
           error: function (err) {
             var errorMessage = err.statusText + ': ' + err.responseText
@@ -30,6 +34,7 @@
           }
         })
       },
+
       /* Esse error irá tratar os erros que ocorrerem ao tentar autorizar uma transação no pagar.me */
       error: function(err) {
         var pagarmeError = JSON.parse(err.responseText)
@@ -51,6 +56,7 @@
       customerData: 'true',
       createToken: 'true', // Define que será gerado um token
       paymentMethods: 'credit_card, boleto',
+
       /* Ao utilizar a versão 1.1.0 do checkout, é necessário enviar o parametro items,
        * os demais podem ser preenchidos pelo usuário no checkout, basta configurar o campo
        * customerData com o valor "true"
