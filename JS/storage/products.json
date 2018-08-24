@@ -1,0 +1,68 @@
+[
+	{
+		"id": "1",
+		"name": "Kirby Star Alies",
+		"description": "Use friend hearts to charm enemies and they'll fight alongside you! drop-in/drop-out co-op: up to three other players can take control of kirby's new friends Play through the entire game with up to four players or with CPU friends Kirby and his friends have fresh moves thanks to new and expanded Copy abilities Combine abilities with elements such as wind and water to create new friend abilities some bosses and enemies are weak to certain elemental attacks, so remember to Strategize",
+		"sub_description": "Nintendo Switch",
+		"default_recipient_id":"re_cjf5rgqli00p1dw6dv57slp9j",
+		"price": 5900,
+		"split_rules": "no",
+		"plan_id": "no",
+		"rid": "no",
+		"type": "product",
+		"img": "coverKirby.jpg"
+	},
+	{
+		"id": "2",
+		"name": "Action Figure Ahri",
+		"description": "Tenha uma réplica perfeita de um dos campeões mais queridos do League of Legends. Produto oficial e licenciado pela Riot Games.",
+		"sub_description": "Vendido e Entregue por Riot Games",
+		"price": 6000,
+		"split_rules": "yes",
+		"default_recipient_id":"re_cjf5rgqli00p1dw6dv57slp9j",
+		"plan_id": "no",
+		"rid": "re_cjf5rgqli00p1dw6dv57slp9j",
+		"type": "product",
+		"img": "ahri.png"
+	},
+	{
+		"id": "3",
+		"name": "Cartão eShop $20",
+		"description": "Tenha uma experiência multimídia completa em seu 3DS ou Wii U com jogos, add-ons, vídeos 3D sob demanda, além de clássicos do Gameboy e Gameboy Collor. Este cartão irá recarregar a sua ewallet do 3DS / Wii U com 50 dólares para comprar qualquer conteúdo disponível no novo Nintendo eShop. O Cartão funciona exclusivamente em consoles Americanos, nas configurações do console, o país escolhido deve ser modificado para United States.",
+		"sub_description": "Vendido e Entregue por Riot Games",
+		"price": 2199,
+		"split_rules": "yes",
+		"default_recipient_id":"re_cjf5rgqli00p1dw6dv57slp9j",
+		"plan_id": "no",
+		"rid": "re_cjfee3v0801suj86ewkdq6b2d",
+		"type": "product",
+		"img": "eshopCard.jpg"
+	},
+	{
+		"id": "4",
+		"name": "Cartão Netflix R$30",
+		"description": "Tenha todos os meses R$30 de créditos Netflix adicionados à sua conta .",
+		"sub_description": "Vendido e entregue por Netflix",
+		"default_recipient_id":"re_cjf5rgqli00p1dw6dv57slp9j",
+		"price": 3199,
+		"split_rules": "yes",
+		"default_recipient_id":"re_cjf5rgqli00p1dw6dv57slp9j",
+		"plan_id": "294599",
+		"rid": "re_cjf5rjtjv00p4dw6dq5ib8yln",
+		"type": "subscription",
+		"img": "card_netflix.jpg"
+	},
+	{
+		"id": "5",
+		"name": "GameBox PocStore",
+		"description": " Ganhe todos os meses diversos jogos para sua conta Steam .",
+		"sub_description": "Vendido e Processado por PocStore",
+		"default_recipient_id":"re_cjf5rgqli00p1dw6dv57slp9j",
+		"price": 1499,
+		"split_rules": "no",
+		"plan_id": "294986",
+		"rid": "no",
+		"type": "subscription",
+		"img": "lootbox.jpg"
+	}
+]

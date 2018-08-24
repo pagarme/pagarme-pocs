@@ -1,0 +1,245 @@
+@media screen and (min-width: 992px) {
+  body.ux-app {
+    background: #fff;
+    padding: 40px 0;
+  }
+}
+
+.basket, .container {
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  .basket, .container {
+    padding: 0 10px;
+  }
+}
+
+.action-link, .ux-card a, .payment > a, .terms > a {
+  color: #008A32;
+  font-weight: bold;
+  text-decoration: none;
+}
+.action-link:hover, .ux-card a:hover, .payment > a:hover, .terms > a:hover {
+  color: #008A32;
+}
+
+.ux-card {
+  border: 1px solid #E8E8E8;
+  background: #FCFCFC;
+  padding: 20px;
+  position: relative;
+}
+.ux-card:hover {
+  cursor: pointer;
+  border-color: #008a32;
+  background-color: #fff;
+}
+
+.ux-card.deleted {
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.2s;
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: none;
+  border: none;
+}
+
+a {
+  color: #333;
+}
+a:hover {
+  color: #000;
+}
+
+.product {
+  color: #767676;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 992px) {
+  .product {
+    padding-left: 75px;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+.product img {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+@media screen and (min-width: 992px) {
+  .product img {
+    display: block;
+  }
+}
+.product .price {
+  color: #333;
+  font-weight: bold;
+}
+.product .tier {
+  padding-bottom: 1em;
+}
+.product .renews {
+  padding-top: 1em;
+}
+.product .title, .product .tier, .product .attr, .product .renews {
+  float: left;
+  clear: left;
+}
+.product .price, .product .term {
+  float: right;
+  clear: right;
+}
+.product .remove {
+  float: right;
+  clear: right;
+  display: none;
+  color: #008a32 !important;
+  border-width: 1px;
+  box-shadow: none !important;
+  font-size: 12px;
+  padding-bottom: 5px !important;
+}
+.product .remove .uxicon {
+  margin-top: 3px;
+  box-shadow: none !important;
+}
+.product .remove:hover {
+  border-color: #008a32 !important;
+}
+@media screen and (min-width: 992px) {
+  .product .remove {
+    display: block;
+  }
+}
+
+.product span {
+  display: block;
+}
+
+.summary dl {
+  margin: 0;
+  padding: 20px;
+}
+.summary dl dt {
+  float: left;
+  clear: left;
+  font-weight: normal;
+}
+.summary dl dd {
+  float: right;
+  clear: right;
+  font-weight: bold;
+}
+.summary dl:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+@media screen and (min-width: 992px) {
+  .summary .subtotal {
+    border-top: 5px solid #D0D0D0;
+  }
+  .summary .subtotal dt {
+    margin-top: 2px;
+  }
+  .summary .subtotal dd {
+    font-size: 18px;
+  }
+}
+.summary .total {
+  background: #128937;
+  color: #fff;
+  padding: 20px;
+}
+.summary .total dt {
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+.summary .total dd {
+  font-size: 1.5em;
+}
+.summary .support dd {
+  float: left;
+  font-weight: normal;
+  padding-left: 0.5em;
+}
+.summary button {
+  margin: 0 20px;
+  width: calc(100% - 40px);
+}
+
+.payment, .terms {
+  margin-bottom: 20px;
+}
+.payment > a, .terms > a {
+  float: right;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+.payment h4, .payment p, .terms h4, .terms p {
+  padding: 0 20px;
+}
+.payment button, .terms button {
+  margin-top: 20px;
+}
+
+.terms .agreed {
+  display: none;
+}
+
+p.agreed {
+  padding-left: 50px;
+  position: relative;
+}
+p.agreed:before {
+  content: " ";
+  background-image: url(https://img1.wsimg.com/fos/react/check.svg);
+  position: absolute;
+  left: 20px;
+  top: 4px;
+  width: 20px;
+  height: 21px;
+}
+
+.cart button[disabled] {
+  background: #e8e8e8 !important;
+  border-bottom: none !important;
+  color: #848484 !important;
+  opacity: 1;
+}
+
+.price {
+  position: relative;
+  display: inline-block;
+}
+.price .old {
+  position: absolute;
+  right: 0;
+  opacity: 1;
+}
+.price .new {
+  opacity: 0;
+}
+.price .strike {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  border-top: 1px solid #333;
+}
+
+#controls {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
