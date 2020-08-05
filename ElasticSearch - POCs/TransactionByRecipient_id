@@ -1,4 +1,4 @@
-curl -X GET https://api.pagar.me/1search
+curl -X GET https://api.pagar.me/1/search
   -d 'api_key=SUA_API_KEY' \
   -d 'type=transaction' \
   -d 'query={
