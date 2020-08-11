@@ -1,0 +1,17 @@
+c:\users\jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\PagarMePOS.exe.config
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\x86\sqlite3.dll
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\x64\sqlite3.dll
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\PagarMePOS.exe
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\PagarMePOS.pdb
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\PagarMe.dll
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\PagarMe.Mpos.dll
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\BouncyCastle.Crypto.pdb
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\obj\Debug\PagarMePOS.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\obj\Debug\PagarMePOS.Form1.resources
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\obj\Debug\PagarMePOS.Properties.Resources.resources
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\obj\Debug\PagarMePOS.csproj.GenerateResource.Cache
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\obj\Debug\PagarMePOS.exe
+C:\Users\Jonathan\documents\visual studio 2015\Projects\PagarMePOS\PagarMePOS\obj\Debug\PagarMePOS.pdb
